@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fahz-Server API</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="menu" onclick="toggleMenu()">☰</div>
+<h1>Fahz-Server API</h1>
+</header>
+
+<aside id="sidebar">
+<a onclick="showPage('dashboard')">Dashboard</a>
+<a onclick="showPage('report')">Report</a>
+</aside>
+
+<main>
+
+<section id="dashboard">
+
+<img class="banner"
+src="https://api.siputzx.my.id/api/canvas/captcha?background=https%3A%2F%2Fi.ibb.co%2F4YBNyvP%2Fimages-76.jpg&captchaKey=Server+API&border=%23f0f0f0&overlayOpacity=0.5">
+
+<h2>Stalker API</h2>
+
+<div class="card">
+<label>Tiktok Stalk</label>
+<p class="hint">Masukkan username Tiktok tanpa @</p>
+<input id="tiktok">
+<button onclick="run('https://api.siputzx.my.id/api/stalk/tiktok?username=','tiktok','r1')">Run</button>
+<pre id="r1"></pre>
+</div>
+
+<div class="card">
+<label>Instagram Stalk</label>
+<p class="hint">Masukkan username Instagram</p>
+<input id="ig">
+<button onclick="run('https://api.siputzx.my.id/api/stalk/instagram?username=','ig','r2')">Run</button>
+<pre id="r2"></pre>
+</div>
+
+<h2>Search API</h2>
+
+<div class="card">
+<label>Youtube Search</label>
+<p class="hint">Contoh: Windah Basudara</p>
+<input id="yt">
+<button onclick="run('https://api.siputzx.my.id/api/s/youtube?query=','yt','r3')">Run</button>
+<pre id="r3"></pre>
+</div>
+
+<div class="card">
+<label>Spotify Search</label>
+<p class="hint">Masukkan judul lagu</p>
+<input id="sp">
+<button onclick="run('https://api.siputzx.my.id/api/s/spotify?query=','sp','r4')">Run</button>
+<pre id="r4"></pre>
+</div>
+
+<h2>Downloader API</h2>
+
+<div class="card">
+<label>Instagram Downloader</label>
+<p class="hint">Masukkan link post Instagram</p>
+<input id="igd">
+<button onclick="run('https://api.siputzx.my.id/api/d/igdl?url=','igd','r5')">Run</button>
+<pre id="r5"></pre>
+</div>
+
+<div class="card">
+<label>Tiktok Downloader</label>
+<p class="hint">Masukkan link video Tiktok</p>
+<input id="tt">
+<button onclick="run('https://api.siputzx.my.id/api/d/tiktok?url=','tt','r6')">Run</button>
+<pre id="r6"></pre>
+</div>
+
+</section>
+
+<section id="report" style="display:none">
+<div class="card">
+<h2>Report</h2>
+<p>Ingin melaporkan masalah?</p>
+<button onclick="window.location='https://fahz-developer.vercel.app/report/laporvirus.html'">
+Kirim Laporan
+</button>
+</div>
+</section>
+
+</main>
+
+<footer>
+Owner : Fahz<br>
+Region : Gunungkidul<br>
+Github : https://fahz-devoffc
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
 
